@@ -136,6 +136,7 @@ h4 {
     margin-top: 60px;
     width: 40vw;
     height: auto;
+    max-width:650px;
 }
 
 .about-us .who-we-are {
@@ -143,6 +144,7 @@ h4 {
     margin-top: auto;
     margin-left: 20px;
     margin-bottom: auto;
+    max-width:650px;
 }
 
 .about-us .who-we-are h3 {
@@ -197,16 +199,19 @@ h4 {
     background-size:100%;
     margin-left: 40px;
     width: 35vw;
+    max-width:650px;
     height: auto;
     margin-bottom:20px;
 }
 
 .testimonials .testimonials-inner .test1 {
     grid-area: 3 / 1 / 4 / 2;
+    right:0;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    max-width:650px;
 }
 
 .testimonials .testimonials-inner .test1:hover {
@@ -221,6 +226,7 @@ h4 {
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    max-width:650px;
 }
 
 .testimonials .testimonials-inner .test2:hover {
@@ -236,6 +242,7 @@ h4 {
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    max-width:650px;
 }
 
 .testimonials .testimonials-inner .test3:hover {
