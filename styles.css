@@ -263,12 +263,12 @@ h4 {
     background-size:110%
 }
 #test2:hover ~ #testShirt {
-    background-image: url("Images/shirt2.webp");
+    background-image: url("Images/shirt2.jpg");
     background-repeat: no-repeat;
     background-size:110%
 }
 #test3:hover ~ #testShirt {
-    background-image: url("Images/shirt3.webp");
+    background-image: url("Images/shirt3.jpg");
     background-repeat: no-repeat;
     background-size:110%
 }
