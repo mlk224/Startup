@@ -44,7 +44,6 @@ h3 {
     font-size: var(--bodyheading-size);
     font-weight: var(--bodyheading-weight);
 }
-
 h4 {
     font-size: var(--body-size);
     font-weight: var(--body-weight);
@@ -387,6 +386,16 @@ div h4 {
     font-size: 12px;
     font-weight: var(--body-weight);
 }
+a{
+    font-size: 12px;
+    font-weight: var(--body-weight);
+    color:black;
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
 
 .logo {
     grid-area: 1 / 1 / 2 / 2;
