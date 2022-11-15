@@ -414,6 +414,7 @@ div h4 {
     font-weight: var(--body-weight);
 }
 
+
 .follow {
     grid-area: 2 / 6 / 3 / 7;
     font-size: 12px;
