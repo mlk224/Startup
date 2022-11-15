@@ -197,6 +197,7 @@ h4 {
 .testimonials .testimonials-inner .testShirt {
     grid-area: 3 / 2 / 7 / 3;
     background-image: url("Images/PlanningShirt.jpeg");
+    transition: background-image 0.2s ease 0.2s;
     background-repeat:no-repeat;
     background-size:100%;
     margin-left: 40px;
@@ -259,16 +260,19 @@ h4 {
 
 .test1:hover ~ .testShirt {
     background-image: url("Images/shirt1.jpg");
+    transition: background-image 0.2s ease 0.2s;
     background-repeat: no-repeat;
     background-size:110%
 }
 #test2:hover ~ #testShirt {
     background-image: url("Images/shirt2.jpg");
+    transition: background-image 0.2s ease 0.2s;
     background-repeat: no-repeat;
     background-size:110%
 }
 #test3:hover ~ #testShirt {
     background-image: url("Images/shirt3.jpg");
+    transition: background-image 0.2s ease 0.2s;
     background-repeat: no-repeat;
     background-size:110%
 }
