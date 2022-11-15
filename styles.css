@@ -193,9 +193,13 @@ h4 {
 
 .testimonials .testimonials-inner .testShirt {
     grid-area: 3 / 2 / 7 / 3;
+    background-image: url("/Images/PlanningShirt.jpeg");
+    background-repeat:no-repeat;
+    background-size:100%;
     margin-left: 40px;
-    width: 30vw;
+    width: 35vw;
     height: auto;
+    margin-bottom:20px;
 }
 
 .testimonials .testimonials-inner .test1 {
@@ -241,6 +245,23 @@ h4 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.2s ease 0.2s;
 }
+
+.test1:hover ~ .testShirt {
+    background-image: url("Images/shirt1.jpg");
+    background-repeat: no-repeat;
+    background-size:110%
+}
+#test2:hover ~ #testShirt {
+    background-image: url("Images/shirt2.webp");
+    background-repeat: no-repeat;
+    background-size:110%
+}
+#test3:hover ~ #testShirt {
+    background-image: url("Images/shirt3.webp");
+    background-repeat: no-repeat;
+    background-size:110%
+}
+
 
 /**/
 .designers .designers-inner {
