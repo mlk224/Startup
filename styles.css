@@ -421,28 +421,28 @@ div h4 {
     font-weight: var(--body-weight);
 }
 
-.facebook {
+.footer .footer-inner .facebook {
     grid-area: 2 / 7 / 3 / 8;
     margin-left: 10px;
     width: 34px;
     height: auto;
 }
 
-.instagram {
+.footer .footer-inner .instagram {
     grid-area: 2 / 8 / 3 / 9;
     margin-left: 10px;
     width: 34px;
     height: auto;
 }
 
-.tiktok {
+.footer .footer-inner .tiktok {
     grid-area: 2 / 9 / 3 / 10;
     margin-left: 10px;
     width: 30.5px;
     height: auto;
 }
 
-.twitter {
+.footer .footer-inner .twitter {
     grid-area: 2 / 10 / 3 / 11;
     margin-left: 10px;
     width: 30.5px;
