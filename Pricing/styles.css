@@ -312,7 +312,7 @@ a:active { text-decoration: none; }
   flex: none;
   width: 100%;
   height: 2px;
-  background: lightgrey;
+  background: black;
   display: flex;
   align-items: center;
   justify-content: center;
