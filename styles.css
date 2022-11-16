@@ -133,7 +133,7 @@ h4 {
 
 .about-us .teamDesign {
     grid-area: 1 / 1 / 2 / 2;
-    margin-top: 60px;
+    margin-top: 20px;
     margin-right:40px;
     width: 40vw;
     height: auto;
