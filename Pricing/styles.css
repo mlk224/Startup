@@ -58,14 +58,101 @@ h4 {
 }
 
 
-
-
 .header h1{
   font-size: var(--title-size);
   font-weight: var(--title-weight);
   margin-top:20px;
   margin-left:50px;
 }
+
+.header h2{
+  margin-top:20px;
+  font-size: var(--subheading-size);
+  font-weight: var(--subheading-weight);
+  text-align: center;
+}
+
+
+
+
+
+
+/* Table CSS */
+.price-table .price-table-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  margin-top:40px;
+}
+table {
+  overflow: hidden;
+  width: 90vw;
+  height:100%;
+}
+
+th{
+  font-size:var(--bodyheading-size);
+  font-weight:var(--bodyheading-weight);
+}
+td{
+  font-size:var(--bodyheading-size);
+  font-weight:var(--bdoy-weight);
+}
+
+td, th {
+  padding: 10px;
+  position: relative;
+  outline: 0;
+}
+
+body:not(.nohover) tbody tr:hover {
+  background-color: #a3b2a74b;
+}
+
+td:hover::after,
+thead th:not(:empty):hover::after,
+td:focus::after,
+thead th:not(:empty):focus::after { 
+  content: '';  
+  height: 10000px;
+  left: 0;
+  position: absolute;  
+  top: -5000px;
+  width: 100%;
+  z-index: -1;
+}
+
+td:hover::after,
+th:hover::after {
+  background-color: #a3b2a74b;
+}
+
+td:focus::after,
+th:focus::after {
+  background-color: lightblue;
+}
+
+/* Focus stuff for mobile */
+td:focus::before,
+tbody th:focus::before {
+  background-color: lightblue;
+  content: '';  
+  height: 100%;
+  top: 0;
+  left: -5000px;
+  position: absolute;  
+  width: 10000px;
+  z-index: -1;
+}
+
+
+
+
+
+
 
 
 .ready-to-design .ready-to-design-inner {

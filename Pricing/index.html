@@ -39,7 +39,65 @@
 
     <header class="header">
         <h1>Pricing.</h1>
+        <h2>We believe in transparency.<br>No need to contact us directly, see our prices!</h2>
     </header>
+
+
+    <header class="price-table">
+        <div class="container price-table-inner">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th class="col">Blank Shirt</th>
+                        <th class="col">Front Print</th>
+                        <th class="col">Back Print</th>
+                        <th class="col">All-Around Print</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="row">100% Polyester</th>
+                        <td>$13</td>
+                        <td>$17</td>
+                        <td>$17</td>
+                        <td>$26</td>
+                    </tr>
+                    <tr>
+                        <th class="row">100% Cotton</th>
+                        <td>$10</td>
+                        <td>$14</td>
+                        <td>$14</td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        <th class="row">Tri-Blend</th>
+                        <td>$13</td>
+                        <td>$17</td>
+                        <td>$17</td>
+                        <td>$26</td>
+                    </tr>
+                    <tr>
+                        <th class="row">Ultra Soft</th>
+                        <td>$15</td>
+                        <td>$19</td>
+                        <td>$19</td>
+                        <td>$30</td>
+                    </tr>
+                    <tr>
+                        <th class="row">Performance Blend</th>
+                        <td>$20</td>
+                        <td>$24</td>
+                        <td>$24</td>
+                        <td>$40</td>
+                    </tr>
+                <tbody>
+            </table>
+            <h4><br>Long sleeve shirts are an additional $5</h4>
+        </div>
+    </header>
+
+
 
 
     <header class="ready-to-design">
@@ -84,6 +142,14 @@
         </div>
     </header>
     <script>
+        if (screen.width < 500) {
+                $("body").addClass("nohover");
+                $("td, th")
+                    .attr("tabindex", "1")
+                    .on("touchstart", function () {
+                        $(this).focus();
+                    });
+            }
     </script>
 </body>
 </html>
