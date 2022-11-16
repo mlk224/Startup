@@ -387,7 +387,7 @@ div h4 {
 
 .footer .footer-inner {
     display: grid;
-    grid-template-columns: 12fr 2fr 1fr 2fr 1fr 2fr repeat(5, 1fr);
+    grid-template-columns: 6fr 2fr 1fr 2fr 1fr 2fr repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -439,12 +439,6 @@ a:active { text-decoration: none; }
     font-weight: var(--body-weight);
 }
 
-
-.follow {
-    grid-area: 2 / 6 / 3 / 7;
-    font-size: 12px;
-    font-weight: var(--body-weight);
-}
 
 .footer .footer-inner .facebook {
     grid-area: 2 / 7 / 3 / 8;

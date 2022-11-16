@@ -1,10 +1,340 @@
-.cone{
-  width:100px;
-  padding-left:50%;
-  padding-top:300px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+/* CORE STYLES */
+
+/* Hamburger Help: https://codepen.io/bradtraversy/pen/vMGBjQ */
+:root {
+    /*--primary-color: #D18963e0;*/
+    --action-color: #D18963;
+    --overlay-color: #d18a63e0;
+    --learn-color: #A3B2A7;
+    --grey-color: #7f7f7f;
+
+    --title-size: 64px;
+    --title-weight: 800;
+    --options-size: 48px;
+    --options-select-weight: 800;
+    --options-weight: 400;
+    --heading-size: 48px;
+    --heading-weight: 400;
+    --subheading-size: 36px;
+    --subheading-weight: 400;
+    --bodyheading-size: 24px;
+    --bodyheading-weight: 700;
+    --body-size: 18px;
+    --body-weight: 400;
+    --button-size: 18px;
+    --button-weight: 400;
+
+    --menu-speed: 0.75s;
 }
-p{
-  padding-left:50%;
-  padding-top:10px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
-  
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4;
+}
+
+h3 {
+    font-size: var(--bodyheading-size);
+    font-weight: var(--bodyheading-weight);
+}
+h4 {
+    font-size: var(--body-size);
+    font-weight: var(--body-weight);
+}
+
+
+.container {
+    max-width: 100vw;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+
+
+
+.header h1{
+  font-size: var(--title-size);
+  font-weight: var(--title-weight);
+  margin-top:20px;
+  margin-left:50px;
+}
+
+
+.ready-to-design .ready-to-design-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+}
+
+.ready-to-design h1 {
+  font-size: var(--subheading-size);
+  font-weight: var(--subheading-weight);
+}
+
+.btn {
+  display: inline-block;
+  font-size: var(--button-size);
+  font-weight: var(--button-weight);
+  border-radius: 5px;
+  border: none;
+  background: var(--action-color);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  transition: opacity 1s ease-in-out;
+  text-decoration: none;
+}
+
+
+.footer .footer-inner {
+  display: grid;
+  grid-template-columns: 6fr 2fr 1fr 2fr 1fr 2fr repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height:200px;
+}
+
+.footer .footer-inner div h3{
+  font-size: 12px;
+  font-weight: var(--bodyheading-weight);
+}
+.footer .footer-inner div h4{
+  font-size: 12px;
+  font-weight: var(--body-weight);
+}
+.footer .footer-inner div h4 a{
+  font-size: 12px;
+  font-weight: var(--body-weight);
+  color:black;
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+
+.logo {
+  grid-area: 1 / 1 / 2 / 2;
+  margin-left: 10px;
+  width: 200px;
+  height: auto;
+}
+
+.company-info {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.shirt-designing {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.final-project {
+  grid-area: 1 / 6 / 2 / 7;
+}
+
+.copyright {
+  grid-area: 2 / 1 / 3 / 2;
+  text-align:left;
+  font-size: 12px;
+  font-weight: var(--body-weight);
+}
+
+
+.footer .footer-inner .facebook {
+  grid-area: 2 / 7 / 3 / 8;
+  margin-left: 10px;
+  width: 34px;
+  height: auto;
+}
+
+.footer .footer-inner .instagram {
+  grid-area: 2 / 8 / 3 / 9;
+  margin-left: 10px;
+  width: 34px;
+  height: auto;
+}
+
+.footer .footer-inner .tiktok {
+  grid-area: 2 / 9 / 3 / 10;
+  margin-left: 10px;
+  width: 30.5px;
+  height: auto;
+}
+
+.footer .footer-inner .twitter {
+  grid-area: 2 / 10 / 3 / 11;
+  margin-left: 10px;
+  width: 30.5px;
+  height: auto;
+}
+
+
+
+/**/
+/**/
+/**/
+/**/
+/* Hamburger MENU STYLES */
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  right: 60px;
+  z-index: 1;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger Line */
+.menu-wrap .hamburger>div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background: lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+/* Hamburger Lines - Top & Bottom */
+.menu-wrap .hamburger>div::before,
+.menu-wrap .hamburger>div::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+/* Moves Line Down */
+.menu-wrap .hamburger>div::after {
+  top: 10px;
+}
+
+/* Toggler Animation */
+.menu-wrap .toggler:checked+.hamburger>div {
+  transform: rotate(135deg);
+  background: white;
+
+}
+
+/* Turns Lines Into X */
+.menu-wrap .toggler:checked+.hamburger>div:before,
+.menu-wrap .toggler:checked+.hamburger>div:after {
+  top: 0;
+  transform: rotate(90deg);
+  background: white;
+}
+
+/* Rotate On Hover When Checked */
+.menu-wrap .toggler:checked:hover+.hamburger>div {
+  transform: rotate(225deg);
+}
+
+/* Show Menu */
+.menu-wrap .toggler:checked~.menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked~.menu>div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked~.menu>div>div {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.4s;
+}
+
+.menu-wrap .menu {
+  /*Opened menu location*/
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 25%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu>div {
+  background: var(--overlay-color);
+  border-radius: 0%;
+  /*edited */
+  width: 100vw;
+  height: 200vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .menu>div>div {
+  text-align: right;
+  margin-top: -300px;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu>div>div>ul>li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.menu-wrap .menu>div>div>ul>li>a {
+  color: inherit;
+  font-weight: var(--options-weight);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.menu-wrap .menu>div>div>ul>li>.Pricing {
+  font-weight: var(--options-select-weight);
+}
