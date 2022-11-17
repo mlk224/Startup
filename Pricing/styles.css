@@ -425,3 +425,6 @@ a:active { text-decoration: none; }
 .menu-wrap .menu>div>div>ul>li>.Pricing {
   font-weight: var(--options-select-weight);
 }
+.menu-wrap .menu>div>div>ul>li>a:hover{
+  text-decoration: underline;
+}

@@ -87,14 +87,14 @@ h4 {
 .shirts-inner .shirt-container {
   position: relative;
   width: 400px;
-  height: 500px;
+  height: 450px;
   margin-bottom:40px;
   
 }
 .shirt-container .image{
   right:0;
   width:400px;
-  height:500px;
+  height:450px;
 }
 .shirt-container:hover .overlay {
   opacity: 0.70;
@@ -107,7 +107,7 @@ h4 {
   left: 0;
   right: 0;
   width:400px;
-  height:500px;
+  height:450px;
   opacity: 0;
   transition: .5s ease;
   background-color: #000000;
@@ -405,4 +405,7 @@ a:active { text-decoration: none; }
 
 .menu-wrap .menu>div>div>ul>li>.Community {
   font-weight: var(--options-select-weight);
+}
+.menu-wrap .menu>div>div>ul>li>a:hover{
+  text-decoration: underline;
 }
