@@ -418,13 +418,13 @@ a:active { text-decoration: none; }
 .menu-wrap .menu>div>div>ul>li>a {
   color: inherit;
   font-weight: var(--options-weight);
-  text-decoration: none;
-  transition: color 0.2s ease;
+  color: inherit;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;  
 }
-
 .menu-wrap .menu>div>div>ul>li>.Pricing {
   font-weight: var(--options-select-weight);
 }
 .menu-wrap .menu>div>div>ul>li>a:hover{
-  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 1);
 }
