@@ -164,6 +164,9 @@ h4 {
   text-decoration: none;
 }
 
+.ready-to-design .ready-to-design-inner .btn:hover{
+  background: #bc744d;
+}
 
 .footer .footer-inner {
   display: grid;

@@ -182,6 +182,9 @@ tbody th:focus::before {
   transition: opacity 1s ease-in-out;
   text-decoration: none;
 }
+.ready-to-design .ready-to-design-inner .btn:hover{
+  background: #bc744d;
+}
 
 
 .footer .footer-inner {

@@ -93,7 +93,9 @@ h4 {
   transition: opacity 1s ease-in-out;
   text-decoration: none;
 }
-
+.ready-to-design .ready-to-design-inner a:hover {
+  background: #889c8d;
+}
 
 .footer .footer-inner {
   display: grid;
