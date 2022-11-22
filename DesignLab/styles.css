@@ -59,6 +59,7 @@ h4 {
 }
 
 .header h1 {
+  
   font-size: var(--title-size);
   font-weight: var(--title-weight);
   margin-top: 20px;
@@ -72,15 +73,19 @@ h4 {
   grid-template-rows: 2fr fr repeat(4, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 10px;
-  height: 550px;
+  height: 600px;
 }
 
 .pick-material .pick-material-inner .material-header h1 {
+  text-align: center;
+
   font-size: var(--subheading-size);
   font-weight: var(--subheading-weight);
 }
 
 .pick-material .pick-material-inner .material-header h2 {
+  text-align: center;
+
   font-size: var(--bodyheading-size);
   font-weight: var(--subheading-weight);
 }
@@ -100,7 +105,6 @@ h4 {
   width: 35vw;
   max-width: 650px;
   height: auto;
-  margin-bottom: 20px;
 }
 
 .pick-material .pick-material-inner div h3 {
@@ -118,6 +122,8 @@ h4 {
   padding-top:10px;
   padding-left:10px;
   padding-bottom:0px;
+  padding-top:20px;
+
 }
 
 .material2 {
@@ -126,6 +132,8 @@ h4 {
   padding-top:10px;
   padding-left:10px;
   padding-bottom:0px;
+  padding-top:20px;
+
 }
 
 .material3 {
@@ -134,6 +142,8 @@ h4 {
   padding-top:10px;
   padding-left:10px;
   padding-bottom:0px;
+  padding-top:20px;
+
 }
 
 .material4 {
@@ -142,14 +152,17 @@ h4 {
   padding-top:10px;
   padding-left:10px;
   padding-bottom:0px;
+  padding-top:20px;
+
 }
 
 .material5 {
   grid-area: 6 / 2 / 7 / 3;
   line-height:15px;
-  padding-top:10px;
+  padding-top:20px;
   padding-left:10px;
   padding-bottom:0px;
+  margin-bottom:20px;
 }
 
 .material1:hover {
@@ -250,11 +263,15 @@ h4 {
 }
 
 .pick-color .pick-color-inner .color-header h1 {
+  text-align: center;
+
   font-size: var(--subheading-size);
   font-weight: var(--subheading-weight);
 }
 
 .pick-color .pick-color-inner .color-header h2 {
+  text-align: center;
+
   font-size: var(--bodyheading-size);
   font-weight: var(--subheading-weight);
 }
@@ -302,22 +319,26 @@ h4 {
 
 .brown {
   grid-area: 4 / 1 / 5 / 2;
-  background-color: rgb(91, 30, 30)
+  background-color: rgb(91, 30, 30);
+  margin-bottom:20px;
 }
 
 .grey {
   grid-area: 4 / 2 / 5 / 3;
-  background-color: grey
+  background-color: grey; 
+  margin-bottom:20px;
 }
 
 .black {
   grid-area: 4 / 3 / 5 / 4;
-  background-color: black
+  background-color: black;
+  margin-bottom:20px;
 }
 
 .white {
   grid-area: 4 / 4 / 5 / 5;
-  background-color: white
+  background-color: white;
+  margin-bottom:20px;
 }
 
 .color-header {
@@ -467,7 +488,7 @@ h4 {
   background-image: url("Images/cone.jpg");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
-  background-size: 110%
+  background-size: 110%;
 }
 
 .grey:hover~.color-preview {
@@ -497,7 +518,6 @@ h4 {
 
 
 
-
 .pick-side .pick-side-inner {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -509,24 +529,29 @@ h4 {
 
   
   .side-header { grid-area: 1 / 1 / 2 / 6; }
-  .side1 { grid-area: 2 / 1 / 3 / 2; }
-  .side2 { grid-area: 2 / 2 / 3 / 3; }
-  .side3 { grid-area: 2 / 3 / 3 / 4; }
+  .side1 { grid-area: 2 / 1 / 3 / 2; margin-bottom:20px;}
+  .side2 { grid-area: 2 / 2 / 3 / 3; margin-bottom:20px;}
+  .side3 { grid-area: 2 / 3 / 3 / 4; margin-bottom:20px;}
 
 
   .pick-side .pick-side-inner .side-header h1 {
+    text-align: center;
+
     font-size: var(--subheading-size);
     font-weight: var(--subheading-weight);
   }
   
   .pick-side .pick-side-inner .side-header h2 {
+    text-align: center;
+
     font-size: var(--bodyheading-size);
     font-weight: var(--subheading-weight);
+    
   }
 
 
 
-  div .sidepic {
+  .pick-side .pick-side-inner div .sidepic {
     border-radius: 100%;
     display: flex;
     margin-left: auto;
@@ -536,13 +561,13 @@ h4 {
     height: 150px;
 }
 
-  div h3 {
+.pick-side .pick-side-inner div h3 {
       text-align: center;
       font-size: var(--bodyheading-size);
       font-weight: var(--bodyheading-weight);
   }
 
-  div h4 {
+  .pick-side .pick-side-inner div h4 {
       text-align: center;
       font-size: var(--body-size);
       font-weight: var(--body-weight);
@@ -573,21 +598,23 @@ h4 {
 
   .upload-inspiration .upload-inspiration-inner {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin-top:30px;
+    margin-top:10px;
   }
   
   .upload-inspiration h1 {
+    text-align: center;
+
     grid-area: 1 / 1 / 2 / 2; 
     font-size: var(--subheading-size);
     font-weight: var(--subheading-weight);
   }
   
   .upload-inspiration .upload-inspiration-inner .btn {
-    grid-area: 1 / 2 / 2 / 3; 
+    grid-area: 2 / 1 / 2 / 2; 
     display: inline-block;
     font-size: var(--button-size);
     font-weight: var(--button-weight);
@@ -595,17 +622,17 @@ h4 {
     border: none;
     background: var(--action-color);
     color: #ffffff;
-    padding: 0.75rem 1.5rem;
+    margin-left:auto;
+    margin-right:auto;
     width:225px;
     height:50px;
     margin-top: 1rem;
     transition: opacity 1s ease-in-out;
     text-decoration: none;
   }
-  
-  .ready-to-design .ready-to-design-inner a:hover {
-    background: #889c8d;
-  }
+  .upload-inspiration .upload-inspiration-inner .btn:hover{
+    background: #bc744d;
+}
 
 
 
