@@ -97,7 +97,7 @@ h4 {
 
 .material-preview {
   grid-area: 2 / 1 / 7 / 2;
-  background-image: url("Images/logo.jpg");
+  background-image: url("Images/white.png");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -203,34 +203,34 @@ h4 {
 
 
 .material1:hover~.material-preview {
-  background-image: url("Images/cone.jpg");
+  background-image: url("Images/polyester.png");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
-  background-size: 110%
+  background-size: 100%
 }
 .material2:hover~.material-preview {
-  background-image: url("Images/cone.jpg");
+  background-image: url("Images/cotton.png");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
-  background-size: 110%
+  background-size: 100%
 }
 .material3:hover~.material-preview {
-  background-image: url("Images/cone.jpg");
+  background-image: url("Images/tri-blend.png");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
-  background-size: 110%
+  background-size: 100%
 }
 .material4:hover~.material-preview {
-  background-image: url("Images/cone.jpg");
+  background-image: url("Images/ultra-soft.png");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
-  background-size: 110%
+  background-size: 100%
 }
 .material5:hover~.material-preview {
-  background-image: url("Images/cone.jpg");
+  background-image: url("Images/performance.png");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
-  background-size: 110%
+  background-size: 100%
 }
 
 
@@ -348,10 +348,10 @@ h4 {
 
 .color-preview {
   grid-area: 2 / 5 / 5 / 6;
-  background-image: url("Images/logo.jpg");
+  background-image: url("Images/white.png");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 50%;
   margin-left: 40px;
   width: 35vw;
   max-width: 650px;
@@ -429,87 +429,87 @@ h4 {
 
 
 .burgundy:hover~.color-preview {
-  background-image: url("Images/cone.jpg");
+  background-image: url("Images/burgundy.png");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
-  background-size: 110%
+  background-size: 50%;
 }
 
 .red:hover~.color-preview {
-  background-image: url("Images/cone.jpg");
+  background-image: url("Images/red.png");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
-  background-size: 110%
+  background-size: 50%;
 }
 
 .orange:hover~.color-preview {
-  background-image: url("Images/cone.jpg");
+  background-image: url("Images/orange.png");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
-  background-size: 110%
+  background-size:50%;
 }
 
 .yellow:hover~.color-preview {
-  background-image: url("Images/cone.jpg");
+  background-image: url("Images/yellow.png");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
-  background-size: 110%
+  background-size: 50%;
 }
 
 .green:hover~.color-preview {
-  background-image: url("Images/cone.jpg");
+  background-image: url("Images/green.png");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
-  background-size: 110%
+  background-size:50%;
 }
 
 .blue:hover~.color-preview {
-  background-image: url("Images/cone.jpg");
+  background-image: url("Images/blue.png");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
-  background-size: 110%
+  background-size: 50%;
 }
 
 .purple:hover~.color-preview {
-  background-image: url("Images/cone.jpg");
+  background-image: url("Images/purple.png");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
-  background-size: 110%
+  background-size: 50%;
 }
 
 .pink:hover~.color-preview {
-  background-image: url("Images/cone.jpg");
+  background-image: url("Images/pink.png");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
-  background-size: 110%
+  background-size: 50%;
 }
 
 .brown:hover~.color-preview {
-  background-image: url("Images/cone.jpg");
+  background-image: url("Images/brown.png");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
-  background-size: 110%;
+  background-size: 50%;
 }
 
 .grey:hover~.color-preview {
-  background-image: url("Images/cone.jpg");
+  background-image: url("Images/grey.png");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
-  background-size: 110%
+  background-size: 50%;
 }
 
 .black:hover~.color-preview {
-  background-image: url("Images/cone.jpg");
+  background-image: url("Images/black.png");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
-  background-size: 110%
+  background-size: 50%;
 }
 
 .white:hover~.color-preview {
-  background-image: url("Images/cone.jpg");
+  background-image: url("Images/white.png");
   transition: background-image 0.2s ease 0.2s;
   background-repeat: no-repeat;
-  background-size: 110%
+  background-size: 50%;
 }
 
 
@@ -552,13 +552,12 @@ h4 {
 
 
   .pick-side .pick-side-inner div .sidepic {
-    border-radius: 100%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
 
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height:auto;
 }
 
 .pick-side .pick-side-inner div h3 {
