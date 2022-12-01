@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
-@media (max-width:600px) {
+@media (max-width:950px) {
     :root {
         /*--primary-color: #D18963e0;*/
         --action-color: #D18963;
