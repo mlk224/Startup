@@ -638,9 +638,9 @@ h4 {
 
   
   .side-header { grid-area: 1 / 1 / 2 / 6; }
-  .side1 { grid-area: 2 / 1 / 3 / 2; margin-bottom:20px;}
-  .side2 { grid-area: 2 / 2 / 3 / 3; margin-bottom:20px;}
-  .side3 { grid-area: 2 / 3 / 3 / 4; margin-bottom:20px;}
+  .side1 { grid-area: 2 / 1 / 3 / 2; margin-bottom:20px; border:red;}
+  .side2 { grid-area: 2 / 2 / 3 / 3; margin-bottom:20px; border:none;}
+  .side3 { grid-area: 2 / 3 / 3 / 4; margin-bottom:20px; border:none;}
 
 
   .pick-side .pick-side-inner .side-header h1 {
