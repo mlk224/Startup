@@ -784,7 +784,7 @@ input[type=submit] {
   border: none;
   background: var(--action-color);
   color: #ffffff;
-  margin-left:560px;
+  margin-left:41%;
   width:150px;
   height:50px;
   margin-top: 1rem;
@@ -794,10 +794,9 @@ input[type=submit] {
 
 /* Style the container */
 .formContainer {
-  width:1300px;
+  width:80vw;
   border-radius: 5px;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left:10%;
 
   padding: 20px;
   border: black;
@@ -805,16 +804,20 @@ input[type=submit] {
 
 /* Floating column for labels: 25% width */
 .col-25 {
+  text-align:right;
   float: left;
-  width: 25%;
+  width: 30%;
+  min-width:100px;
   margin-top: 6px;
+  margin-right:100px;
 }
 
 /* Floating column for inputs: 75% width */
 .col-75 {
   float: left;
-  width: 75%;
+  width: 50%;
   margin-top: 6px;
+  margin-left:20px;
 }
 
 /* Clear floats after the columns */
