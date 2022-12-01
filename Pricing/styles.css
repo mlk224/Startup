@@ -79,6 +79,8 @@ h4 {
 
 /* Table CSS */
 .price-table .price-table-inner {
+  background-color:#a3b2a726;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
