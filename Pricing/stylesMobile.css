@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+@media (max-width:600px) {
+    :root {
+        /*--primary-color: #D18963e0;*/
+        --action-color: #D18963;
+        --overlay-color: #d18a63e0;
+        --learn-color: #A3B2A7;
+        --grey-color: #7f7f7f;
+    
+        --title-size: 32px;
+        --title-weight: 800;
+        --options-size: 28px;
+        --options-select-weight: 800;
+        --options-weight: 400;
+        --heading-size: 26px;
+        --heading-weight: 400;
+        --subheading-size: 22px;
+        --subheading-weight: 400;
+        --bodyheading-size: 20px;
+        --bodyheading-weight: 700;
+        --body-size: 16px;
+        --body-weight: 400;
+        --button-size: 12px;
+        --button-weight: 400;
+    
+        --menu-speed: 0.75s;
+    }
+
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.4;
+    }
+    
+    h3 {
+        font-size: var(--bodyheading-size);
+        font-weight: var(--bodyheading-weight);
+    }
+    h4 {
+        font-size: var(--body-size);
+        font-weight: var(--body-weight);
+    }
+    
+    
+    .container {
+        max-width: 100vw;
+        margin: auto;
+        overflow: hidden;
+        padding: 0 3rem;
+    }
+    
+    
+    .header h1{
+      font-size: var(--title-size);
+      font-weight: var(--title-weight);
+      margin-top:20px;
+      margin-left:20px;
+    }
+    
+    .header h2{
+      margin-top:20px;
+      margin-left:20px;
+      margin-right:20px;
+      font-size: var(--subheading-size);
+      font-weight: var(--subheading-weight);
+      text-align: center;
+    }
+    
+    
+    
+    
+    
+    
+    /* Table CSS */
+    .price-table .price-table-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: auto;
+      margin-top:40px;
+      margin-left:20px;
+      margin-right:20px;
+    }
+    table {
+        background-image: url("Images/prices.jpg");
+        overflow: hidden;
+        background-size:cover;
+        height:100px;
+        width:300px;
+        margin-left:20px;
+        margin-right:20px;
+    }
+    
+    th{
+        display:none;
+      font-size:var(--body-size);
+      font-weight:var(--bodyheading-weight);
+    }
+    td{
+        display:none;
+
+      font-size:var(--body-size);
+      font-weight:var(--body-weight);
+    }
+    
+    td, th {
+      padding: 10px;
+      position: relative;
+      outline: 0;
+    }
+    
+    body:not(.nohover) tbody tr:hover {
+      background-color: #a3b2a74b;
+    }
+    
+    td:hover::after,
+    thead th:not(:empty):hover::after,
+    td:focus::after,
+    thead th:not(:empty):focus::after { 
+      content: '';  
+      height: 10000px;
+      left: 0;
+      position: absolute;  
+      top: -5000px;
+      width: 100%;
+      z-index: -1;
+    }
+    
+    td:hover::after,
+    th:hover::after {
+      background-color: #a3b2a74b;
+    }
+    
+    td:focus::after,
+    th:focus::after {
+      background-color: lightblue;
+    }
+    
+    /* Focus stuff for mobile */
+    td:focus::before,
+    tbody th:focus::before {
+      background-color: lightblue;
+      content: '';  
+      height: 100%;
+      top: 0;
+      left: -5000px;
+      position: absolute;  
+      width: 10000px;
+      z-index: -1;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .ready-to-design .ready-to-design-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 300px;
+    }
+    
+    .ready-to-design h1 {
+      font-size: var(--subheading-size);
+      font-weight: var(--subheading-weight);
+    }
+    
+    .btn {
+      display: inline-block;
+      font-size: var(--button-size);
+      font-weight: var(--button-weight);
+      border-radius: 5px;
+      border: none;
+      background: var(--action-color);
+      color: #ffffff;
+      padding: 0.75rem 1.5rem;
+      margin-top: 1rem;
+      transition: opacity 1s ease-in-out;
+      text-decoration: none;
+    }
+    .ready-to-design .ready-to-design-inner .btn:hover{
+      background: #bc744d;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+    .footer .footer-inner {
+        padding:0px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height:150px;
+        max-width:600px;
+    }
+    
+    .footer .footer-inner div h3{
+        font-size: 10px;
+        font-weight: var(--bodyheading-weight);
+    }
+    .footer .footer-inner div h4{
+        font-size: 10px;
+        font-weight: var(--body-weight);
+    }
+    .footer .footer-inner div h4 a{
+        font-size: 10px;
+        font-weight: var(--body-weight);
+        color:black;
+    }
+    a:link { text-decoration: none; }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:active { text-decoration: none; }
+    
+    
+    .logo {
+        grid-area: 1 / 1 / 2 / 2;
+        padding-top:5px;
+        width: 90%;
+        height: auto;
+    }
+    
+    .company-info {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    
+    .shirt-designing {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+    
+    .final-project {
+        grid-area: 1 / 4 / 2 / 5;
+    }
+    
+    .copyright {
+        display:none;
+        text-align:left;
+        font-size: 12px;
+        font-weight: var(--body-weight);
+    }
+    
+    
+    .footer .footer-inner .facebook {
+        grid-area: 2 / 1 / 3 / 2;
+        width: 34px;
+        height: auto;
+        padding-left:20%;
+    }
+    
+    .footer .footer-inner .instagram {
+        grid-area: 2 / 2 / 3 / 3;
+        width: 34px;
+        height: auto;
+        padding-left:20%;
+    }
+    
+    .footer .footer-inner .tiktok {
+        grid-area: 2 / 3 / 3 / 4; 
+        width: 30.5px;
+        height: auto;
+        padding-left:20%;
+    }
+    
+    .footer .footer-inner .twitter {
+        grid-area: 2 / 4 / 3 / 5;
+        width: 30.5px;
+        height: auto;
+        padding-left:20%;
+    }
+    
+    
+    
+    /**/
+    /**/
+    /**/
+    /**/
+    /* Hamburger MENU STYLES */
+    .menu-wrap {
+        position: fixed;
+        top: 0;
+        right: 60px;
+        z-index: 1;
+    }
+    
+    .menu-wrap .toggler {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+    
+    .menu-wrap .hamburger {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        padding: 1rem;
+        background: var(--primary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Hamburger Line */
+    .menu-wrap .hamburger>div {
+        position: relative;
+        flex: none;
+        width: 100%;
+        height: 2px;
+        background: lightgrey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+    }
+    
+    /* Hamburger Lines - Top & Bottom */
+    .menu-wrap .hamburger>div::before,
+    .menu-wrap .hamburger>div::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        width: 100%;
+        height: 2px;
+        background: inherit;
+    }
+    
+    /* Moves Line Down */
+    .menu-wrap .hamburger>div::after {
+        top: 10px;
+    }
+    
+    /* Toggler Animation */
+    .menu-wrap .toggler:checked+.hamburger>div {
+        transform: rotate(135deg);
+        background: white;
+    
+    }
+    
+    /* Turns Lines Into X */
+    .menu-wrap .toggler:checked+.hamburger>div:before,
+    .menu-wrap .toggler:checked+.hamburger>div:after {
+        top: 0;
+        transform: rotate(90deg);
+        background: white;
+    }
+    
+    /* Rotate On Hover When Checked */
+    .menu-wrap .toggler:checked:hover+.hamburger>div {
+        transform: rotate(225deg);
+    }
+    
+    /* Show Menu */
+    .menu-wrap .toggler:checked~.menu {
+        visibility: visible;
+    }
+    
+    .menu-wrap .toggler:checked~.menu>div {
+        transform: scale(1);
+        transition-duration: var(--menu-speed);
+    }
+    
+    .menu-wrap .toggler:checked~.menu>div>div {
+        opacity: 1;
+        transition: opacity 0.4s ease 0.4s;
+    }
+    
+    .menu-wrap .menu {
+        /*Opened menu location*/
+        position: fixed;
+        margin-top:-40px;
+        top: 0px;
+        right: 0px;
+        bottom:50px;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .menu-wrap .menu>div {
+        background: var(--overlay-color);
+        border-radius: 0%;
+        /*edited */
+        width: 100vw;
+        height: 200vw;
+        display: flex;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+        transition: all 0.4s ease;
+    }
+    
+    .menu-wrap .menu>div>div {
+        text-align: right;
+        margin-top: -300px;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+    
+    .menu-wrap .menu>div>div>ul>li {
+        list-style: none;
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    
+    .menu-wrap .menu>div>div>ul>li>a {
+        color: inherit;
+        font-weight: var(--options-weight);
+        color: inherit;
+        text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+        transition: text-decoration-color 300ms;  
+    }
+    
+    .menu-wrap .menu>div>div>ul>li>.Home {
+        font-weight: var(--options-select-weight);
+    
+    }
+    .menu-wrap .menu>div>div>ul>li>a:hover{
+        text-decoration-color: rgba(255, 255, 255, 1);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
